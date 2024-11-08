@@ -1,0 +1,89 @@
+.healthy-container {
+  position: relative;
+  background-image: url(../../assets/home/healthyy.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 8rem 2rem;
+}
+
+.healthy-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity here */
+  z-index: 1; /* Position overlay below content */
+}
+
+.healthy-container * {
+  position: relative;
+  z-index: 2; /* Ensures text/content stays above the overlay */
+}
+
+.recipes-title {
+  text-align: center;
+}
+.recipes-container {
+  padding: 10% 5%;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+.recipes-muscle {
+  display: flex;
+  align-items: center;
+  max-width: 920px;
+  gap: 1rem;
+
+  p {
+    margin-top: 0;
+  }
+}
+
+.right-muscle img {
+  max-width: 420px;
+}
+
+.recipes-body {
+  display: flex;
+  align-items: center;
+  max-width: 920px;
+  gap: 1rem;
+  text-align: right;
+
+  p {
+    margin-top: 0;
+  }
+}
+
+.right-body img {
+  max-width: 420px;
+}
+
+@media (max-width: 768px) {
+  .recipes-muscle,
+  .recipes-body {
+    flex-direction: column;
+  }
+
+  .left-body {
+    order: 1;
+  }
+}
+
+@media (max-width: 520px) {
+  .right-muscle img,
+  .right-body img {
+    width: 100%;
+  }
+}
