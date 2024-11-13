@@ -7,9 +7,9 @@ import Healthy from "./pages/healthy/Healthy";
 function App() {
   return (
     <>
-      <Landing />
+      {/* <Landing /> */}
       {/* <Tasty />  */}
-      {/* {<Healthy />} */}
+      {<Healthy />}
     </>
   );
 }
